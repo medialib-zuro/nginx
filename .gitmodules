@@ -1,0 +1,6 @@
+[submodule "modules/nginx-live-module"]
+	path = modules/nginx-live-module
+	url = git@github.com:medialib-zuro/nginx-live-module.git
+[submodule "modules/ngx_req_status"]
+	path = modules/ngx_req_status
+	url = git@github.com:medialib-zuro/ngx_req_status.git
