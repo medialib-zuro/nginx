@@ -40,6 +40,9 @@ if [ $USING_SYS_LIB -eq 0 ]; then
     fi
 fi
 
+git submodule update --init --recursive
+patch -t -p 1 <modules/ngx_req_status/write_filter-1.7.11.patch
+
 config="./auto/configure"
 config="$config --prefix=$ROOT_DIR"
 config="$config --with-file-aio"
